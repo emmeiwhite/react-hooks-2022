@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 /** 1) useState() Hook:
  * -> It is a function from React
@@ -8,10 +8,15 @@ import React from "react";
  */
 
 const ErrorExample = () => {
-  let title = "Hello World!";
+  const [title, setTitle] = useState("Hello World!");
 
   const handleTitle = () => {
-    title = "Hi! Welcome!!";
+    if (title === "Hello World!") {
+      setTitle("Hi! Welcome");
+    } else {
+      setTitle("Hello World!");
+    }
+
     console.log(title);
   };
   return (
