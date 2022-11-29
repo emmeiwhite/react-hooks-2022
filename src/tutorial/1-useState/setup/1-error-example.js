@@ -7,7 +7,7 @@ import React, { useState } from "react";
  * -> useState() hook returns an array with 2 elements - a value and a function
  */
 
-const ErrorExample = () => {
+const errorexample = () => {
   const [title, setTitle] = useState("Hello World!");
 
   const handleTitle = () => {
@@ -29,4 +29,4 @@ const ErrorExample = () => {
   );
 };
 
-export default ErrorExample;
+export default errorexample;
