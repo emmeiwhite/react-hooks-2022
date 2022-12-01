@@ -19,13 +19,13 @@ const UseStateCounter = () => {
       <h1>VALUE</h1>
       <h1 style={{ fontSize: "120px" }}>{value}</h1>
       <div>
-        <button className="btn" onClick={handleIncrease}>
+        <button className="btn" onClick={handleDecrease}>
           decrease
         </button>
         <button className="btn" onClick={() => setValue(0)}>
           reset
         </button>
-        <button className="btn" onClick={handleDecrease}>
+        <button className="btn" onClick={handleIncrease}>
           increase
         </button>
       </div>
