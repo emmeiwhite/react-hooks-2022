@@ -1,12 +1,6 @@
 import React from "react";
-import Setup from "./tutorial/1-useState/setup/5-useState-counter";
+import Setup from "./tutorial/2-useEffect/setup/1-useEffect-basics";
 
-/** 1) useState() Hook:
- * -> It is a function from React
- * -> useState() hook is used to preserve our local state (component level state)
- * -> useState() hook re-renders the component when invoked
- * -> useState() hook returns an array with 2 elements - a value and a function
- */
 function App() {
   return (
     <div className="container">
