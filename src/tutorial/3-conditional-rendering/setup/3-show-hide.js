@@ -1,7 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const ShowHide = () => {
-  return <h2>show/hide</h2>;
+  const [error, setError] = useState(false);
+
+  return (
+    <main>
+      <button className="btn" onClick={() => setError(!error)}>
+        toggle
+      </button>
+      {error ? <h2>Error ...</h2> : <h2>No Error...</h2>}
+    </main>
+  );
 };
 
 export default ShowHide;
